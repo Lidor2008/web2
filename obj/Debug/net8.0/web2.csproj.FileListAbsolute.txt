@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\web2\bin\Debug\net8.0\web2.exe
+C:\Users\User\Desktop\web2\bin\Debug\net8.0\web2.deps.json
+C:\Users\User\Desktop\web2\bin\Debug\net8.0\web2.runtimeconfig.json
+C:\Users\User\Desktop\web2\bin\Debug\net8.0\web2.dll
+C:\Users\User\Desktop\web2\bin\Debug\net8.0\web2.pdb
+C:\Users\User\Desktop\web2\obj\Debug\net8.0\web2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\web2\obj\Debug\net8.0\web2.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\web2\obj\Debug\net8.0\web2.AssemblyInfo.cs
+C:\Users\User\Desktop\web2\obj\Debug\net8.0\web2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\web2\obj\Debug\net8.0\web2.dll
+C:\Users\User\Desktop\web2\obj\Debug\net8.0\refint\web2.dll
+C:\Users\User\Desktop\web2\obj\Debug\net8.0\web2.pdb
+C:\Users\User\Desktop\web2\obj\Debug\net8.0\web2.genruntimeconfig.cache
+C:\Users\User\Desktop\web2\obj\Debug\net8.0\ref\web2.dll

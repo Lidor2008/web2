@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+
+<head></head>
+
+
+<body>
+    <h1>Shopping List</h1>
+    <button onclick="getShoppingList()">add Israel</button>
+    <button onclick="getShoppingList()">add USA</button>
+    <button onclick="getShoppingList()">add China</button>
+    <ul></ul>
+    <input type="text"><button onclick="addToShoppingList()">Add Item</button>
+
+
+    <script>
+        let ul = document.getElementsByTagName("ul")[0];
+        let input = document.getElementsByTagName("input")[0];
+
+
+        async function getShoppingList() {
+            let response = await fetch("/getVideoGames");
+            let shoppingList = await response.json();
+
+
+            ul.innerHTML = null;
+            for (let i = 0; i < shoppingList.length; i++) {
+                let li = document.createElement("li");
+                ul.appendChild(li);
+                li.innerText = shoppingList[i];
+            }
+        }
+
+
+        async function addToShoppingList() {
+            await fetch("/add country", {
+                method: "POST",
+                body: input.value
+            });
+
+
+            getShoppingList();
+
+
+            input.value = "";
+        }
+    </script>
+</body>
+
+
+</html>
