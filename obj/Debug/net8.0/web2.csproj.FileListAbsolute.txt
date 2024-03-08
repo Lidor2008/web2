@@ -12,3 +12,4 @@ C:\Users\User\Desktop\web2\obj\Debug\net8.0\refint\web2.dll
 C:\Users\User\Desktop\web2\obj\Debug\net8.0\web2.pdb
 C:\Users\User\Desktop\web2\obj\Debug\net8.0\web2.genruntimeconfig.cache
 C:\Users\User\Desktop\web2\obj\Debug\net8.0\ref\web2.dll
+C:\Users\User\Desktop\web2\obj\Debug\net8.0\web2.sourcelink.json

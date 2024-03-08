@@ -1,52 +1,43 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+  
+    <body>
+        
+        <button onclick="handleclick()">add one</button>
+        <button5>5 seconed </button5>
+        <button10>10 seconds</button10>
+        <div>0</div>
 
+        <br>
+        <br>
 
-<head></head>
+        <div>Time Left:</div>
+        <div class="timeLeft">5</div>
+        
+        <script>
+            let div = document.getElementsByTagName("div")[0];
+            let timeLeftDiv = document.getElementsByClassName("timeLeft")[0];
+            let seconds = 3;
+            let intervalId;
 
-
-<body>
-    <h1>Shopping List</h1>
-    <button onclick="getShoppingList()">add Israel</button>
-    <button onclick="getShoppingList()">add USA</button>
-    <button onclick="getShoppingList()">add China</button>
-    <ul></ul>
-    <input type="text"><button onclick="addToShoppingList()">Add Item</button>
-
-
-    <script>
-        let ul = document.getElementsByTagName("ul")[0];
-        let input = document.getElementsByTagName("input")[0];
-
-
-        async function getShoppingList() {
-            let response = await fetch("/getVideoGames");
-            let shoppingList = await response.json();
-
-
-            ul.innerHTML = null;
-            for (let i = 0; i < shoppingList.length; i++) {
-                let li = document.createElement("li");
-                ul.appendChild(li);
-                li.innerText = shoppingList[i];
+            function handleclick(){
+                div.innerText ++;;
             }
-        }
 
+            function updateTime() {
+                seconds -= 1;
+                console.log(seconds);
+                timeLeftDiv.innerText = seconds;
 
-        async function addToShoppingList() {
-            await fetch("/add country", {
-                method: "POST",
-                body: input.value
-            });
+                if (seconds == 0) {
+                    clearInterval(intervalId);
+                }
+            }
 
-
-            getShoppingList();
-
-
-            input.value = "";
-        }
-    </script>
-</body>
-
-
+            intervalId = setInterval(updateTime, 1000);
+        </script>
+    </body>
 </html>
