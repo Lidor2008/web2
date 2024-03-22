@@ -3,3 +3,56 @@
     top: 50%;
     left:50%;
    }
+   
+   @font-face {
+      font-family: "virgil";
+      src: url("Virgil_GS_Regular.ttf");
+   }
+
+   div {
+      font-family: "virgil";
+      font-size: 30px;
+   }
+   .big-button {
+  font-size: 24px;
+  padding: 20px 40px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: block; /
+  margin: 0 auto; 
+}
+
+
+.click-count {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+table {
+  width: 200px; 
+  border-collapse: collapse;
+  float: left; 
+  margin-right: 20px; 
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
+th {
+  background-color: #f2f2f2;
+}
+.everything{
+   display: flex;
+   flex-direction: row;
+}
+.everythingelse{
+   display: flex;
+   flex-direction: column;
+}
