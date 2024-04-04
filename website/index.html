@@ -5,7 +5,7 @@
     </head>
   
     <body>
-        <div class="everything">
+<div class="everything">
 <div class="leaderboard">
 
     <table>
@@ -19,7 +19,7 @@
             <td>bbc</td>
             <td>1000</td>
         </tr>
-        <!-- שורות נוספות... -->
+        
     </table>
 </div>
     <div class="everythingelse">
@@ -39,7 +39,7 @@
         <div class="timeLeft">5</div>
         
         
-        <button class="big-button" onclick="countClick()">לחץ עלי!</button>
+        <button class="big-button" onclick="countClick()">click me</button>
         <div class="click-count">clicks: <span id="clickCount">0</span></div>
     </div>
     </div>
@@ -54,20 +54,20 @@
         let intervalId;
         
         function handleclick(){
-                div.innerText ++;;
+            div.innerText++;
+        }
+
+        function updateTime() {
+            seconds -= 1;
+            console.log(seconds);
+            timeLeftDiv.innerText = seconds;
+
+            if (seconds == 0) {
+                clearInterval(intervalId);
             }
+        }
 
-            function updateTime() {
-                seconds -= 1;
-                console.log(seconds);
-                timeLeftDiv.innerText = seconds;
-
-                if (seconds == 0) {
-                    clearInterval(intervalId);
-                }
-            }
-
-            intervalId = setInterval(updateTime, 1000);
+        intervalId = setInterval(updateTime, 1000);
 
            
         </script>
@@ -81,4 +81,5 @@ function countClick() {
   clickCount++;
   countDisplay.textContent = clickCount;
 }
+</script>
 </html>
