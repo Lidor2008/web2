@@ -1,85 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-  
-    <body>
-<div class="everything">
-<div class="leaderboard">
 
-    <table>
-        <tr>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="everything">
+      <div class="leaderboard">
+
+        <table>
+          <tr>
             <th>rank</th>
             <th>name</th>
             <th>points</th>
-        </tr>
-        <tr>
+          </tr>
+          <tr>
             <td>1</td>
             <td>bbc</td>
             <td>1000</td>
-        </tr>
-        
-    </table>
-</div>
-    <div class="everythingelse">
+          </tr>
+
+        </table>
+      </div>
+      <div class="everythingelse">
 
         <button onclick="handleclick()">add one</button>
         <button id="1s">1 seconds</button>
         <button id="3s">3 seconds</button>
         <button id="5s">5 seconds</button>
         <button id="10s">10 seconds</button>
-        
+
         <div>0</div>
-        
+
         <br>
         <br>
-        
+
         <div>Time Left:</div>
         <div class="timeLeft">5</div>
-        
-        
+
+
         <button class="big-button" onclick="countClick()">click me</button>
         <div class="click-count">clicks: <span id="clickCount">0</span></div>
-    </div>
+      </div>
     </div>
     <script>
-        let div = document.getElementsByTagName("div")[0];
-        let timeLeftDiv = document.getElementsByClassName("timeLeft")[0];
-        let button1 = document.getElementById("1s");
-        let button3 = document.getElementById("3s");
-        let button5 = document.getElementById("5s");
-        let button10 = document.getElementById("10s");
-        let seconds = 3;
-        let intervalId;
-        
-        function handleclick(){
-            div.innerText++;
+      let div = document.getElementsByTagName("div")[0];
+      let timeLeftDiv = document.getElementsByClassName("timeLeft")[0];
+      let button1 = document.getElementById("1s");
+      let button3 = document.getElementById("3s");
+      let button5 = document.getElementById("5s");
+      let button10 = document.getElementById("10s");
+      let seconds = 5;
+      let intervalId;
+
+      function handleclick() {
+        div.innerText++;
+      }
+
+      function updateTime() {
+        seconds -= 1;
+        console.log(seconds);
+        timeLeftDiv.innerText = seconds;
+
+        if (seconds == 0) {
+          clearInterval(intervalId);
         }
+      }
 
-        function updateTime() {
-            seconds -= 1;
-            console.log(seconds);
-            timeLeftDiv.innerText = seconds;
+      intervalId = setInterval(updateTime, 1000);
 
-            if (seconds == 0) {
-                clearInterval(intervalId);
-            }
-        }
 
-        intervalId = setInterval(updateTime, 1000);
-
-           
-        </script>
-    </body>
+    </script>
+</body>
 
 <script>
-let clickCount = 0;
-const countDisplay = document.getElementById('clickCount');
+  let clickCount = 0;
+  const countDisplay = document.getElementById('clickCount');
 
-function countClick() {
-  clickCount++;
-  countDisplay.textContent = clickCount;
-}
+  function countClick() {
+    clickCount++;
+    countDisplay.textContent = clickCount;
+  }
 </script>
+
 </html>
