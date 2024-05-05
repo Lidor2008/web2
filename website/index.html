@@ -60,26 +60,16 @@
     <div class="click-count">clicks: <span id="clickCount">0</span></div>
   </div>
       <div class="everythingelse">
-        <h3>What Time Do You Want?</h3>
-        <button class="WebsiteButton" id="1s">1 seconds</button>
-        <button class="WebsiteButton"id="3s">3 seconds</button>
-        <button class="WebsiteButton"id="5s">5 seconds</button>
-        <button class="WebsiteButton"id="10s">10 seconds</button>
+        <h3>Pick Your Time:</h3>
+        <button class="WebsiteButton" id="1s" onclick="Time(1)">1 seconds</button>
+        <button class="WebsiteButton"id="3s" onclick="Time(3)">3 seconds</button>
+        <button class="WebsiteButton"id="5s" onclick="Time(5)">5 seconds</button>
+        <button class="WebsiteButton"id="10s" onclick="Time(10)">10 seconds</button>
       </div>
     </div>
     
     <script src="script.js"></script>
   </div>
   </body>
-  
-  <script>
-    let clickCount = 0;
-    const countDisplay = document.getElementById('clickCount');
-    
-    function countClick() {
-      clickCount++;
-      countDisplay.textContent = clickCount;
-    }
-  </script>
 
 </html>

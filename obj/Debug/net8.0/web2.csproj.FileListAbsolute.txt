@@ -28,3 +28,18 @@ C:\Users\donyb\Desktop\Handasat Tochna\Lidor\web2\obj\Debug\net8.0\refint\web2.d
 C:\Users\donyb\Desktop\Handasat Tochna\Lidor\web2\obj\Debug\net8.0\web2.pdb
 C:\Users\donyb\Desktop\Handasat Tochna\Lidor\web2\obj\Debug\net8.0\web2.genruntimeconfig.cache
 C:\Users\donyb\Desktop\Handasat Tochna\Lidor\web2\obj\Debug\net8.0\ref\web2.dll
+C:\Users\User\Desktop\web2-2\bin\Debug\net8.0\web2.exe
+C:\Users\User\Desktop\web2-2\bin\Debug\net8.0\web2.deps.json
+C:\Users\User\Desktop\web2-2\bin\Debug\net8.0\web2.runtimeconfig.json
+C:\Users\User\Desktop\web2-2\bin\Debug\net8.0\web2.dll
+C:\Users\User\Desktop\web2-2\bin\Debug\net8.0\web2.pdb
+C:\Users\User\Desktop\web2-2\obj\Debug\net8.0\web2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\web2-2\obj\Debug\net8.0\web2.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\web2-2\obj\Debug\net8.0\web2.AssemblyInfo.cs
+C:\Users\User\Desktop\web2-2\obj\Debug\net8.0\web2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\web2-2\obj\Debug\net8.0\web2.sourcelink.json
+C:\Users\User\Desktop\web2-2\obj\Debug\net8.0\web2.dll
+C:\Users\User\Desktop\web2-2\obj\Debug\net8.0\refint\web2.dll
+C:\Users\User\Desktop\web2-2\obj\Debug\net8.0\web2.pdb
+C:\Users\User\Desktop\web2-2\obj\Debug\net8.0\web2.genruntimeconfig.cache
+C:\Users\User\Desktop\web2-2\obj\Debug\net8.0\ref\web2.dll
